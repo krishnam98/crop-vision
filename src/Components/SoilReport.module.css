@@ -1,0 +1,137 @@
+.report_div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+  backdrop-filter: blur(5px); /* Blurred effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.report_container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  width: 50%;
+  height: 90%;
+  border-radius: 15px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5), -4px -4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.grid_container {
+  /* border: 1px solid black; */
+  width: 60%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  gap: 10px;
+}
+
+.heading {
+  text-align: center;
+  font-weight: 500;
+  border-bottom: 1px solid rgb(181, 181, 181);
+  font-size: 2rem;
+  font-family: "Roboto Condensed", sans-serif;
+  animation: animate 1s cubic-bezier(0.3, 2.06, 0.84, 0.09) forwards;
+  margin-bottom: 20px;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(-15px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.report_item {
+  height: fit-content;
+  width: 100px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: white;
+  border-radius: 15px;
+  color: rgb(74, 73, 73);
+  box-shadow: 0 0 6px rgba(0, 204, 68, 0.7), 0 0 12px rgba(0, 204, 68, 0.5);
+}
+
+.value {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 3rem;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+.name {
+  font-family: "Roboto Condensed", sans-serif;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.report_closebtn {
+  background-color: transparent;
+  height: 30px;
+  width: 30px;
+  border: none;
+  outline: none;
+  color: rgb(15, 15, 15);
+  font-size: x-large;
+  font-weight: bolder;
+  position: absolute;
+  top: 10px;
+  right: 50px;
+}
+
+.unit_zinc {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: small;
+  margin-left: -5px;
+}
+
+@media (max-width: 1024px) {
+  .value {
+    font-size: 2rem;
+  }
+  .name {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .value {
+    font-size: 1.5rem;
+  }
+  .name {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 640px) {
+  .report_item {
+    width: 80px;
+  }
+}
+
+@media (max-width: 475px) {
+  .report_container {
+    width: 70%;
+    height: 50%;
+  }
+  .report_closebtn {
+    right: 30px;
+  }
+}

@@ -1,0 +1,156 @@
+/* .imgDiv {
+  right: 0px;
+  top: 0px;
+  width: fit-content;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5px;
+  border: 1px solid black;
+  margin-top: -60px;
+}
+
+.imgDiv_solid {
+  background-color: green;
+  height: 100px;
+  width: 100px;
+}
+
+.imgDiv_img > img {
+  height: 100px;
+  width: 100px;
+} */
+
+.imgDiv {
+  right: 0px;
+  top: 50px;
+  width: fit-content;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Always 2 columns */
+  gap: 2px; /* Added a small gap for better spacing */
+  border: 1px solid black;
+  position: absolute;
+}
+
+.imgDiv_solid {
+  background-color: green;
+}
+
+.imgDiv_solid,
+.imgDiv_img > img {
+  width: 100px;
+  height: 100px;
+}
+
+@media (min-width: 300px) {
+  /* Adjust for very small screens */
+  .imgDiv {
+    grid-template-columns: repeat(
+      2,
+      minmax(40px, 1fr)
+    ); /* Adjust width slightly */
+  }
+
+  .imgDiv_solid,
+  .imgDiv_img > img {
+    width: 40px; /* Scale down */
+    height: 40px;
+  }
+}
+
+@media (min-width: 475px) {
+  /* Adjust for very small screens */
+  .imgDiv {
+    grid-template-columns: repeat(
+      2,
+      minmax(60px, 1fr)
+    ); /* Adjust width slightly */
+  }
+
+  .imgDiv_solid,
+  .imgDiv_img > img {
+    width: 60px; /* Scale down */
+    height: 60px;
+  }
+}
+
+@media (min-width: 640px) {
+  /* Adjust for very small screens */
+  .imgDiv {
+    grid-template-columns: repeat(
+      2,
+      minmax(60px, 1fr)
+    ); /* Adjust width slightly */
+  }
+
+  .imgDiv_solid,
+  .imgDiv_img > img {
+    width: 60px; /* Scale down */
+    height: 60px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Adjust for very small screens */
+  .imgDiv {
+    grid-template-columns: repeat(
+      2,
+      minmax(80px, 1fr)
+    ); /* Adjust width slightly */
+  }
+
+  .imgDiv_solid,
+  .imgDiv_img > img {
+    width: 80px; /* Scale down */
+    height: 80px;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Adjust for very small screens */
+  .imgDiv {
+    grid-template-columns: repeat(
+      2,
+      minmax(100px, 1fr)
+    ); /* Adjust width slightly */
+  }
+
+  .imgDiv_solid,
+  .imgDiv_img > img {
+    width: 100px; /* Scale down */
+    height: 100px;
+  }
+}
+
+@media (min-width: 1280px) {
+  /* Adjust for very small screens */
+  .imgDiv {
+    grid-template-columns: repeat(
+      2,
+      minmax(100px, 1fr)
+    ); /* Adjust width slightly */
+  }
+
+  .imgDiv_solid,
+  .imgDiv_img > img {
+    width: 100px; /* Scale down */
+    height: 100px;
+  }
+}
+
+@media (min-width: 1568px) {
+  /* Adjust for very small screens */
+  .imgDiv {
+    grid-template-columns: repeat(
+      2,
+      minmax(100px, 1fr)
+    ); /* Adjust width slightly */
+  }
+
+  .imgDiv_solid,
+  .imgDiv_img > img {
+    width: 100px; /* Scale down */
+    height: 100px;
+  }
+}

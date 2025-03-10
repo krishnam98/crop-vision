@@ -1,0 +1,54 @@
+.buttonsComp {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  margin-top: 30px;
+}
+
+.reportBtn {
+  outline: none;
+  margin-right: 100px;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto Condensed", sans-serif;
+  border-radius: 15px;
+  border: 1px solid #056425; /* Slightly darker green border */
+  box-shadow: 0 0 6px rgba(0, 204, 68, 0.7), 0 0 12px rgba(0, 204, 68, 0.5); /* Moderate glow */
+  color: black; /* White text for contrast */
+  background: #65e665; /* Dark green background */
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.reportBtn:hover {
+  box-shadow: 0 0 10px rgba(0, 255, 100, 0.9), 0 0 18px rgba(0, 255, 100, 0.6);
+  background: #09c209; /* Slightly lighter on hover */
+}
+.Btn_icn {
+  font-size: 2rem;
+}
+
+.cropBtn {
+  background-color: white;
+  outline: none;
+  margin-right: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto Condensed", sans-serif;
+  border-radius: 15px;
+  border: 1px solid black;
+  box-shadow: 0 0 6px rgba(0, 204, 68, 0.7), 0 0 12px rgba(0, 204, 68, 0.5); /* Moderate glow */
+}
+
+@media (max-width: 500px) {
+  .buttonsComp {
+    margin-top: 50px;
+  }
+}
