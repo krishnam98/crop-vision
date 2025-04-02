@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import styles from "./AnimatedText.module.css";
 import gsap from "gsap";
 
-const AnimatedText = () => {
+const Typewriter = () => {
     const cursorRef = useRef(null);
     const [text, setText] = useState("");
     const words = ["Sense", "Generate", "Recommend"];
@@ -52,4 +52,4 @@ const AnimatedText = () => {
     );
 };
 
-export default AnimatedText;
+export default Typewriter;

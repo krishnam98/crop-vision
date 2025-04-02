@@ -9,17 +9,21 @@ import Hero from './Components/Hero'
 import SoilReport from './Components/SoilReport'
 import { Outlet } from 'react-router'
 import Crops from './Components/Crops'
+import { useSelector } from 'react-redux'
+import CropVisionForm from './Components/CropVisionForm'
 
 function App() {
+
+  const arr = useSelector((cvStore) => cvStore.reportReducer);
+  console.log(arr)
+
 
   return (
     <>
       <Outlet />
       {/* Header */}
       <Header />
-
-      {/* Images (Right Side) */}
-      {/* <ImageDiv /> */}
+      {arr[0].value == "" && <CropVisionForm />}
 
       {/* Text */}
       <Hero />

@@ -18,7 +18,7 @@ const crops = [
     npk: {
       nitrogen: "135-180 kg/ha",
       phosphorus: "85-100 kg/ha",
-      potassium: "135-150 kg/ha",
+      potassium: "135-150 kg/ha", 
     },
     moisture: "65-80%",
     zinc: "4-8 ppm",

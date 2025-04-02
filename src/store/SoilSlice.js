@@ -4,9 +4,7 @@ const initValues = [
   { value: "", name: "Nitrogen" },
   { value: "", name: "Potassium" },
   { value: "", name: "Phosphorus" },
-  { value: "", name: "Moisture" },
   { value: "", name: "phValue" },
-  { value: "", name: "Zinc" },
 ];
 
 const soilSlice = createSlice({

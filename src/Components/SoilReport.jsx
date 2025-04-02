@@ -14,7 +14,6 @@ const SoilReport = () => {
 
     //    Fetching Report
     useEffect(() => {
-        dispatch(soilSliceActions.SetReport({ reportArr: report }))
 
         // const fetchReport = async () => {
         //     const response = await fetch("http://localhost:8080/soilReport");
